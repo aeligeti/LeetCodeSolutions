@@ -1,0 +1,32 @@
+# Eclipse
+.metadata/
+*.project
+*.classpath
+*.settings/
+
+# Obsidian
+LeetCodeNotes/
+
+# Local configs
+*.log
+*.bak
+
+# API keys
+*.env
+*.properties
+
+# Binaries
+bin/
+*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+bin/
+build/
+.gradle/
+
+# Gradle wrapper distribution
+gradle/
