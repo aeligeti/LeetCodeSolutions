@@ -1,4 +1,4 @@
-package com.leetcode.p0098_validatebinarytree;
+package com.leetcode.p0098_validatebinarysearchtree;
 
 import com.leetcode.base.TreeNode;
 import com.leetcode.p0572_subtreeofanothertree.SubTreeOfAnotherTree;
@@ -14,7 +14,7 @@ import com.leetcode.p0572_subtreeofanothertree.SubTreeOfAnotherTree;
  * Space Complexity: O(h), where h is the height of the tree, due to the recursion stack.
  *
  */
-public class ValidateBinaryTree {
+public class ValidateBinarySearchTree {
 	
 	public static Integer prev = null;
 	

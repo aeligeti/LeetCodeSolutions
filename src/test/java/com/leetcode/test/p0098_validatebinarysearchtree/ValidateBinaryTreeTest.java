@@ -1,4 +1,4 @@
-package com.leetcode.test.p0098_validatebinarytree;
+package com.leetcode.test.p0098_validatebinarysearchtree;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import com.leetcode.base.TreeNode;
-import com.leetcode.p0098_validatebinarytree.ValidateBinaryTree;
+import com.leetcode.p0098_validatebinarysearchtree.ValidateBinarySearchTree;
 
 /*
  * Test Class for Leetcode 98: Validate Binary Search Tree
@@ -19,14 +19,14 @@ class ValidateBinaryTreeTest {
 	// === register every implementation ===
 	static Stream<Arguments> solvers() {
 		return Stream.of(
-			Arguments.of(new ValidateBinaryTree())
+			Arguments.of(new ValidateBinarySearchTree())
 		);
 	}
 	
 	/* ---------- basic sanity check ---------- */
 	@ParameterizedTest(name = "{0} basic")
 	@MethodSource("solvers")
-	void basicCase(ValidateBinaryTree solver) {
+	void basicCase(ValidateBinarySearchTree solver) {
 		TreeNode root = new TreeNode(3);
 		root.left = new TreeNode(1);
 		root.right = new TreeNode(5);
@@ -49,7 +49,7 @@ class ValidateBinaryTreeTest {
 	/* ---------- edge cases ---------- */
 	@ParameterizedTest(name = "{0} edge cases")
 	@MethodSource("solvers")
-	void edgeCases(ValidateBinaryTree solver) {
+	void edgeCases(ValidateBinarySearchTree solver) {
 		//add edge cases from Leetcode discussion
 		// Single node tree
 		TreeNode singleNode = new TreeNode(1);	
